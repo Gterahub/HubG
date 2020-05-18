@@ -28,6 +28,9 @@ ul{
     padding: 0 3rem;  
     overflow: hidden; 
 }
+.d-flex{
+    display :flex;
+}
 
 .svg-icon{
     height: 7rem;
@@ -78,6 +81,23 @@ ul{
 .bg-primary{
     background: #308ED7;
 }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6{width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.mt-1{margin-top: 1rem;}
+.mt-2{margin-top: 2rem;}
+
+.h-100{height: 100%;}
 
 .bg-dark{
     background: #0b0b0b;
@@ -174,7 +194,7 @@ ul{
     display: flex;
     justify-content: space-between;
     background: #FFFAFA;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-bottom: 3rem;
     width: 100%;
     
@@ -280,7 +300,12 @@ ul{
 }
 .box{
     padding: 1rem 2.5rem;
+    justify-content:center;
+    align-items:center;
     background: #3BB1D7;
+    
+}
+.box:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75),
     0px 4px 4px rgba(0, 0, 0, 0.75);
 }

@@ -11,6 +11,82 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
     <header>
         <nav id="navbar">
             <div>
@@ -25,9 +101,66 @@
 
     <!-- Section: Student Page -->
     <section id="welcome" class="pt-4">
-
+        <div class="col-md-6 mx-auto">
+            <div class="card card-body bg-light mt-5">
+        <form id="regForm" action="<?= URLROOT ?>/vendors/register" method="post">
+            <h1>Register:</h1>
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">Personal :
+                <div class="form-group">
+                    <label for="firstName"></label>
+                    <input type="text" name="firstName" id="name" oninput="this.className = ''" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName"></label>
+                    <input type="text" name="lastName" id="name" oninput="this.className = ''" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" oninput="this.className = ''" placeholder="Email Address">
+                </div>
+            </div>
+            <div class="tab">Authentication :
+                <div class="form-group">
+                    <label for="password"></label>
+                    <input type="password" name="password" oninput="this.className = ''" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword"></label>
+                    <input type="password" name="confirmPassword" oninput="this.className = ''" id="password" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="tab">Contact Info:
+                <div class="form-group">
+                    <label for="city"></label>
+                    <input type="text" name="city" id="city" oninput="this.className = ''" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <label for="state"></label>
+                    <input type="text" name="state" id="state" oninput="this.className = ''" placeholder="State">
+                </div>
+                <div class="form-group">
+                    <label for="country"></label>
+                    <input type="text" name="country" id="country" oninput="this.className = ''"  placeholder="Country">
+                </div>
+            </div>
             
-            <form action="" enctype="">
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              </div>
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <!-- <span class="step"></span> -->
+            </div>
+          </form>
+            
+            <!-- <form action="" enctype="">
                     
                 <div class="form-wrap py-3">
                     <div class="form-wrapper">
@@ -83,14 +216,15 @@
                     
                 </div>
                 
-            </form>
-
+            </form> -->
+        </div>
+    </div>
     </section>
     <!-- End of Section: Welcome -->
     
-
+<script src="js/form.js"></script>
 
     <!-- FontAwesome Kits -->
-    <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script
+    <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>
 </body>
 </html>
