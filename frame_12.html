@@ -18,7 +18,7 @@
             </div>
             
             <ul>
-                <li><a href="index.html" class="btn-white">Back to Home</a></li>
+                <li><a href="index.html" class="btn-white back-btn">Back to Home</a></li>
             </ul>
         </nav>
     </header>
@@ -29,15 +29,15 @@
             <div class="purchase-left">
                 <div class="card-info  ">
                     <div class="header">
-                        <h4>Graphic Design</h4>
+                        <h4 class="text-center">Graphic Design</h4>
                     </div>
                     <div class="card-body">
-                        <img src="./img/graphics.png" alt="graphics-splash">
-                        <div><h5>Become a graphics designer in no time</h5></div>
+                        <img src="./img/graphics2.png" alt="graphics-splash">
+                        <div><p class="text-center">Become a graphics designer in no time</p></div>
                     </div>
                     <div class="card-footer">
                         <div class="price-tag">
-                            <p>$12.99</p>
+                            <p class="text-center">$12.99</p>
                         </div>
                     </div>
                     
@@ -53,31 +53,34 @@
                             <div class="form-group-alt">
                                 <label for="number">Card Number</label>
                                 <input type="number" name="Card-Holder"  placeholder="**** **** **** 1234">
+
+                                <select name="card" id="card">
+                                    <option value="VISA">VISA</option>
+                                    <option value="MASTER">MASTERCARD</option>
+                                    <option value="VERVE">VERVE</option>
+                                </select>
                             <div>
-                            <div class="form-group-alt">
-                                <div class="dropdown">
-                                        <button onclick="myFunction()" class="dropbtn">VISA <i class="fas fa-caret-down ml-2"></i></button>
-                                        <div id="myDropdown" class="dropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                </div>
-                            </div>
+                           
                             <div class="form-group-alt">
                                 <div class="cardholder-items">
                                     <label for="">
                                         Expiration
-                                    </label>
-                            
-                                    <label for="">
-                                        CVC
+                                        <span class="margin-left">CVC</span>
                                     </label>
                                 </div>
                                 <div class="input-details">
                                     <input type="month" name="month" id="" placeholder="June">
-                                    <input type="number" name="CVC" id="cvc-number" placeholder="123"
+                                    <input type="text" name="year" placeholder="2020">
+                                    <input type="number" name="CVC" id="cvc-number" placeholder="123">
                                 </div>
-                                
+                            </div>
+                            <div class="price-sales">
+                                <div>   
+                                    <a href="" class="btn-tertiary">Purchase</a>
+                                </div>
+                               <div>
+                                    <p class="text-center">$12.99</p>
+                               </div>
                             </div>
                         </form>
                 </div>
@@ -89,27 +92,7 @@
     
 
 
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+    
     <!-- FontAwesome Kits -->
     <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>
 </body>
