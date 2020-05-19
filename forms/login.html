@@ -86,6 +86,14 @@
         .step.finish {
           background-color: #4CAF50;
         }
+        #welcome{
+          background:linear-gradient(rgba(17, 15, 15, 0.8),rgba(12, 11, 11, 0.8)),  url('../img/bg/pexels-photo-3861958.jpeg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 600px !important; 
+          align-content: center;
+          align-items: center;
+        }
         </style>
     <header>
         <nav id="navbar">
@@ -94,15 +102,15 @@
             </div>
             
             <ul>
-                <li><a href="index.html" class="btn-light">Back to Home</a></li>
+                <li><a href="../index.html" class="btn-light">Back to Home</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="welcome" class="pt-4">
-        <div class="col-md-6 mx-auto">
+    <section id="welcome" class="pt-4" data-bg="" >
+        <div class="col-6 mx-auto">
             <div class="card card-body bg-light mt-5">
-        <form id="regForm" action="<?= URLROOT ?>/vendors/register" method="post">
+        <form id="regForm" action="" method="post">
             <h1>Login:</h1>
             <!-- One "tab" for each step in the form: -->
             <div class="tab">
@@ -117,14 +125,10 @@
             </div>
           
             
-            <div style="overflow:auto;">
-              <div style="float:right;">
-                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-              </div>
-            </div>
-            <!-- Circles which indicates the steps of the form: -->
             
+                <button type="button" id="nextBtns" onclick="">Login</button>
+            
+         
           </form>
          
         </div>
