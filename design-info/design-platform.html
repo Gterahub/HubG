@@ -2,44 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gtera &mdash; Hub</title>
-    <!-- <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css"> -->
-    <link rel="stylesheet" media="screen and(max-width: 768px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and(min-width: 1100px)" href="css/widescreen.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Gtera &mdash; Hub | Design Platform</title>
+    <link rel="stylesheet" href="../../fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <nav id="navbar">
             <div>
-                <img src="./img/logo/image 1.png" alt="brand-logo" >
+                <img src="../img/logo/image 1.png" alt="brand-logo" >
             </div>
             
-            <ul>
-                <li><a class="btn-light">Become A Tutor</a></li>
-                <li><a href="#"><span>Login<span></a></li>
-                <li><a href="#" class="btn-sign">Sign Up</a></li>
-            </ul>
+            <div class="topnav" id="myTopnav">
+                <ul>
+                    <li><a href="../forms/tutor_SignUp.html" class="btn-light">Become A Tutor</a></li>
+                    <li><a href="../forms/welcome.html"><span>Login<span></a></li>
+                    <li><a href="../forms/welcome.html" class="btn-sign">Sign Up</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars" style="color:  #19b4e7"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Section: Design Platform -->
-    <section id="design" class="py-2">
+    <section id="design" class="py-3">
         <div class="container">
             <div class="design-items">
                 <div class="design-item">
-                    <h3>Development</h3>
+                    <h3> <a href="#">Development</a> </h3>
                 </div>
                 <div class="design-item">
-                    <h3>Business</h3>
+                    <h3><a href="#">Business</a></h3>
                 </div>
                 <div class="design-item">
-                    <h3>IT and Software</h3>
+                    <h3><a href="#">IT and Software</a></h3>
                 </div>
                 <div class="design-item">
-                    <h3><span class="active">Design</span></h3>
+                    <h3><span class="active"><a href="#">Design</a></span></h3>
                 </div>
             </div>
         </div>
@@ -55,7 +58,7 @@
                         <h4>Graphic Design</h4>
                     </div>
                     <div class="card-body">
-                        <img src="./img/graphics.png" alt="graphics-splash">
+                        <img src="../img/graphics.png" alt="graphics-splash">
                         <div><h5>Become a graphics designer in no time</h5></div>
                     </div>
                     <div class="card-footer">
@@ -75,14 +78,14 @@
 
                 <div class="card-info">
                     <div class="header">
-                        <h4>Animation Design</h4>
+                        <h4 class="header-title">Animation Design</h4>
                     </div>
                     <div class="card-body text-center">
-                        <img src="./img/animation.svg" alt="animation-splash" height="116px">
+                        <img src="../img/animation.svg" alt="animation-splash" height="123px">
                         <div><h5>The Beginner's guide to animation</h5></div>
                     </div>
-                    <div class="card-footer">
-                        <div class="star-rates">
+                    <div class="card-footer mt-1">
+                        <div class="star-rates ">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -101,7 +104,7 @@
                         <h4>Interior Design</h4>
                     </div>
                     <div class="card-body">
-                        <img src="./img/interior.svg" alt="graphics-splash">
+                        <img src="../img/interior.svg" alt="graphics-splash">
                         <div><h5>How to work with interior designs like a pro</h5></div>
                     </div>
                     <div class="card-footer">
@@ -124,7 +127,7 @@
                         <h4>Motion Design</h4>
                     </div>
                     <div class="card-body">
-                        <img src="./img/motion.svg" alt="motion-splash">
+                        <img src="../img/motion.svg" alt="motion-splash">
                         <div><h5>Motion graphics using adobe after effect</h5></div>
                     </div>
                     <div class="card-footer">
@@ -151,7 +154,7 @@
         <div class="container">
             <div class="testimonial-items">
                 <div class="testimonial-item">
-                    <div class="blue-circle "><h2>L</h2></div>
+                    <div class="blue "><h2>L</h2></div>
                     <div class="info-msg text-center">
                         <p>This avenue has brought myriad help to me and I am glad I invested on it. Join us in the community today and influence your life positively with proper knowledge.</p>
                         <div class="name-list">
@@ -163,11 +166,11 @@
                 </div>
 
                 <div class="testimonial-item">
-                    <div class="blue-circle "><h2>J</h2></div>
+                    <div class="blue "><h2>J</h2></div>
                     <div class="info-msg text-center">
-                        <p>I started at stage zero, with Ndifre. I was able to start learning online and eventually build up enough knowledge ans skills to excel in my field. </p>
+                        <p>I started at stage zero, with Ndifre. I was able to start learning online and eventually build up enough knowledge and skills to excel in my field. </p>
                         <div class="name-list">
-                            <h3>Jibrin</h3>
+                            <h3>Jibrin Ade</h3>
                             <p>Student</p>
                         </div>
                     </div>
@@ -179,6 +182,8 @@
     
 
   
+    <!-- Main JS folder -->
+    <script src="../main.js/script.js"></script>
 
     <!-- FontAwesome Kits -->
     <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>

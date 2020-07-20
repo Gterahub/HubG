@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gtera &mdash; Hub |Tutor SignUp</title>
+    <link rel="stylesheet" href="../../fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div>
+                <img src="../img/logo/image 1.png" alt="brand-logo" >
+            </div>
+            
+            <ul>
+                <li><a href="../index.html" class="btn-light">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section: Tutor Sign Up Page -->
+    <section id="tutor">
+        <main>
+            <div class="tutor-form">
+                <h3 class="text-center text-welcome">Tutor Sign Up</h3>
+                <div class="wrapper">
+                    <div class="wrap-item">
+                        <form action="">
+                            <div class="form-group">
+                            <label for="firstName"></label>
+                            <input type="text" name="firstName" id="firstName"placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName"></label>
+                                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"></label>
+                                <input type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm password"></label>
+                                <input type="password" name="confirm password" id="password" placeholder="Confirm Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="city"></label>
+                                <input type="text" name="city" id="city" placeholder="City">
+                            </div>
+                            <div class="form-group">
+                                <label for="state"></label>
+                                <input type="text" name="state" id="password" placeholder="State">
+                            </div>
+                            <div class="form-group">
+                                <label for="country"></label>
+                                <input type="text" name="country" id="country" placeholder="Country">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="wrap-item">
+                        <div></div>
+                    </div>
+                    <div class="wrap-item">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="courses"></label>
+                                <input type="text" name="courses" id="courses" placeholder="Courses to be taken">
+                            </div>
+                            <div class="form-group">
+                                <label for="proficiency"></label>
+                                <input type="text" name="proficiency" id="proficiency" placeholder="Proficiency">
+                            </div>
+                            <div class="form-group">
+                                <label for="country"></label>
+                                <input type="text" name="country" id="country" placeholder="Specialty">
+                            </div>
+                            <div class="form-group">
+                                <label for="years"></label>
+                                <input type="number" name="years" id="years" placeholder="Years of experience">
+                            </div>
+                            <div class="form-group">
+                                <label for="availability"></label>
+                                <input type="text" name="availability" id="availability" placeholder="Availability">
+                            </div>
+                            <div class="form-group">
+                                <input type="file" id="file" accept="folder/*">
+                                <label for="file">
+                                    <i class="fas fa-plus"></i> &nbsp;
+                                    Upload Certification
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-login" onclick="setupEventListeners()">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class=" tutor-footer-contents">
+                <div class="form-group text-center">
+                        <input type="checkbox" name="remember" value="remember"> &nbsp; <span class="checkbox-terms">Agree with Terms and Conditions</span>
+                </div>
+                <div class="login">
+                    <!-- <a href="#" class="btn-login">Login</a> -->
+                    <p class="text-center text-welcome pt-1"> <small>forgot password?</small></p>
+                </div>
+                <div class="login-footer">
+                    <div class="no-acct">
+                        <p>Don't have an account?</p>
+                    </div>
+                    <div class="sign-up">
+                        <a href="#" class="text-welcome">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- End of Section: Tutor's Sign Up Page -->
+    
+
+    <!-- ===== Form Validation Script ===== -->
+    <script src="../scripts/formValidation.js"></script>
+
+
+    <!-- FontAwesome Kits -->
+    <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>
+</body>
+</html>

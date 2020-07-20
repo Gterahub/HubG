@@ -2,47 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gtera &mdash; Hub</title>
+    <title>Gtera &mdash; Hub | Instructors</title>
     <!-- <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css"> -->
-    <link rel="stylesheet" media="screen and(max-width: 768px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and(min-width: 1100px)" href="css/widescreen.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <nav id="navbar">
             <div>
-                <img src="./img/logo/image 1.png" alt="brand-logo" >
+                <img src="../img/logo/image 1.png" alt="brand-logo" >
             </div>
-            
-            <ul>
-                <li><a class="btn-light">Become A Tutor</a></li>
-                <li><a href="#"><span>Login<span></a></li>
-                <li><a href="#" class="btn-sign">Sign Up</a></li>
-            </ul>
+
+            <div class="topnav" id="myTopnav">
+                <ul>
+                    <li><a href="../forms/tutor_Signup.html" class="btn-light btn-tutor">Become A Tutor</a></li>
+                    <li><a href="../forms/welcome.html"><span>Login<span></a></li>
+                    <li><a href="../forms/student-sign-in.html" class="btn-sign btn-sign2">Sign Up</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars" style="color:  #19b4e7"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Section: Lead Instructors -->
-    <section id="lead-instructors" class="py-2">
+    <section id="lead-instructors" class="py-3">
         <div class="container">
                 <h2 class="text-center m-heading text-secondary">Lead Instructors</h2>
             <div class="instructors">
                 
                 <div class="instructor text-center">
-                    <img src="./img/instructors/esidem-lead.png" alt="Sam Esidem">
+                    <img src="../img/instructors/esidem-lead.png" alt="Sam Esidem">
                     <div class="details">
                         <h3>Sam Esidem</h3>
                         <h5>Instructor</h5>
                         <p><span class="text-dark">Experience</span>: 5years</p>
-                        <h4>Andriod Development</h4>
+                        <h4 class="android">Android Development</h4>
                     </div>
                 </div>
 
                 <div class="instructor text-center">
-                    <img src="./img/instructors/ndifre-lead.png" alt="Ndifre">
+                    <img src="../img/instructors/ndifre-lead.png" alt="Ndifreke Ukpe">
                     <div class="details">
                         <h3>Ndifreke Ukpe</h3>
                         <h5>Instructor</h5>
@@ -52,7 +56,7 @@
                 </div>
 
                 <div class="instructor text-center">
-                    <img src="./img/instructors/lawrencia-lead.png" alt="Lawrencia Umana">
+                    <img src="../img/instructors/lawrencia-lead.png" alt="Lawrencia Umanah">
                     <div class="details">
                         <h3>Lawrencia Umanah</h3>
                         <h5>Instructor</h5>
@@ -71,22 +75,22 @@
             <h3 class="text-center text-primary py-2">Ndifre is trusted by many</h3>
            <div class="sponsors-items">
                <div class="sponsor-logo">
-                   <img src="./img/logo/benzlogo.png" alt="benz-logo">
+                   <img src="../img/logo/benzlogo.png" alt="benz-logo">
                </div>
                <div class="sponsor-logo">
-                   <img src="./img/logo/adidas.png" alt="adidas-logo">
+                   <img src="../img/logo/adidas.png" alt="adidas-logo">
                </div>
                <div class="sponsor-logo">
-                    <img src="./img/logo/Volkswagen.png" alt="Volkswagen-logo">
+                    <img src="../img/logo/Volkswagen.png" alt="Volkswagen-logo">
                 </div>
                 <div class="sponsor-logo">
-                    <img src="./img/logo/booking.png" alt="booking-logo">
+                    <img src="../img/logo/booking.png" alt="booking-logo">
                 </div>
                 <div class="sponsor-logo">
-                    <img src="./img/logo/ibmlogo.png" alt="ibm-logo">
+                    <img src="../img/logo/ibmlogo.png" alt="ibm-logo">
                 </div>
                 <div class="sponsor-logo">
-                    <img src="./img/logo/pinterest.png" alt="pinterest-logo">
+                    <img src="../img/logo/pinterest.png" alt="pinterest-logo">
                 </div>
               
            </div>
@@ -102,7 +106,7 @@
                     <h3 class="text-white"><a>About Us</a></h3>
                     <h4 class="text-white pt-2 mb-1">Contact Us</h4>
                     <div>
-                        <img src="./img/logo/ndifre-footer.png" alt="">
+                        <img src="../img/logo/ndifre-footer.png" alt="">
                     </div>
                 </div>
 
@@ -111,9 +115,9 @@
                     <div class="links pt-1">
                         <ul>
                             <li><a href="#">Feedback</a></li>
-                            <li><a href="#">Become a Tutor</a></li>
-                            <li><a href="#">Become a Student</a></li>
-                            <li><a href="#">Terms</a></li>
+                            <li><a href="../forms/tutor_Signup.html">Become a Tutor</a></li>
+                            <li><a href="./forms/student-sign-in.html">Become a Student</a></li>
+                            <li><a href="./top-courses.html">Terms</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
@@ -148,13 +152,17 @@
                 </div>
             </footer>
         </div>
-   </section>document.getElementsByTagName('video')[0].src
+   </section>
    <!-- End of Section:Footer -->
     
 
   
 
+
     <!-- FontAwesome Kits -->
     <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>
+
+    <!-- Main JS folder -->
+    <script src="../main.js/script.js"></script>
 </body>
 </html>

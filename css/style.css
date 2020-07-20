@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
-    line-height: 1.4;
+    line-height: 1.6;
     background: #fefffe;
 }
 
@@ -39,13 +39,13 @@ ul{
     border-radius: 50%;
     font-weight: 600;
     font-size: 1.5rem;
-    
 }
 
 .blue-tag{
-    padding: 0 .25rem;
+    padding: 0 .35rem !important;
     color: #fff !important;
 }
+
 .btn{
     display: inline-block;
     border: 1px solid #666363;
@@ -58,6 +58,7 @@ ul{
 .pt-2{  padding-top: 2rem;}
 .pt-3{  padding-top: 3rem;}
 .pt-4{  padding-top: 4rem;}
+.pt-5{  padding-top: 5rem;}
 
 .py-1{  padding: 1.5rem 0;}
 .py-2{  padding: 2rem 0;}
@@ -75,8 +76,15 @@ ul{
 .mb-2{  margin-bottom: 2rem;}
 .mb-3{  margin-bottom: 3rem;}
 .ml-2{  margin-left: 0.55rem;}
+
+.mt-1{  margin-top: 1.1rem;}
+.mt-2{  margin-top: 2rem;}
 .bg-primary{
     background: #308ED7;
+}
+
+.bg-secondary{
+    background: #19b4e7;
 }
 
 .bg-dark{
@@ -90,6 +98,20 @@ ul{
     padding: 0.625rem 0.45rem;
     cursor: pointer;
     color: #065A74;
+}
+
+.btn-dark{
+    color: #020202;
+}
+
+.btn-secondary{
+    display: inline-block;
+    color: #030303;
+    padding: 0.15rem 0.75rem;
+    cursor: pointer;
+    margin-bottom: .55rem;
+    border-radius: 6px;
+    box-shadow: 0 7px 26px rgba(0, 0, 0, 0.45)
 }
 
 .btn-white{
@@ -110,6 +132,9 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.btn-lg{
+    padding: 0 2.9rem;
+}
 .text-white{
     color: #fff;
 
@@ -135,8 +160,16 @@ ul{
     text-align: right;
 }
 
+.text-black{
+    color: #070707;
+}
+
 .text-dark{
     font-weight: 600;
+}
+
+.text-upper{
+    text-transform: uppercase;
 }
 
 .btn-sign{
@@ -173,11 +206,11 @@ ul{
     top: 0;
     display: flex;
     justify-content: space-between;
-    background: #FFFAFA;
-    padding: 1rem;
+    background: #f6f6f6;
+    padding: .75rem;
     margin-bottom: 3rem;
     width: 100%;
-    
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
 }
 
 #navbar-flex{
@@ -186,7 +219,6 @@ ul{
     padding: 1rem;
     margin-bottom: 3rem;
     width: 100%;
-    
 }
 
 #navbar ul{
@@ -211,13 +243,12 @@ ul{
 /*section: Showcase */
 #showcase{
     display: flex;
-    margin: 5rem 0;
+    margin: 5rem 1rem;
 }
 #showcase .showcase-items{
     justify-content: space-evenly;
     align-items: center;
 }
-
 
 #showcase  div{
     flex: 1;
@@ -227,10 +258,10 @@ ul{
     padding: 5rem 1rem;
 }
 
-
-
 #showcase .showcase-img img{
-    max-width: 100%;
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 
 /* Section: Get High Demand Skills */
@@ -270,9 +301,7 @@ ul{
     align-items: center;
     text-align: center;
     flex: 1;
-    margin: 0.75rem;
-    
-    
+    margin: 0.75rem;  
 }
 
 #categories .category-items .category-item  h3{
@@ -286,6 +315,9 @@ ul{
 }
 
 /* Section: Design Platform */
+#design{
+    margin-top: 4rem;
+}
 #design .design-items{
     display: flex;
     flex-flow: row wrap;
@@ -300,25 +332,25 @@ ul{
     padding: 0rem 1rem;
     text-align: center;
     align-content: center;
-    
-    
 }
+
 #design .design-items .design-item h3{
     margin-bottom: 0.28rem;
     font-size: 1.4rem;
 }
 
+#design .design-items .design-item h3 a{
+    color: #070707;
+}
 
 #design .design-items .design-item .active{
     border-bottom: 6px solid #6dd1f3;
 }
 
-/* Design Cards */
+/*Section: Design Cards */
 #design-cards .card-contents{
     display: flex;
     flex-flow:row wrap;
-    
-    
 }
 
 #design-cards .card-contents .card-info{
@@ -326,14 +358,19 @@ ul{
     border: 1px solid #ccc;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75),
     0px 4px 4px rgba(0, 0, 0, 0.75);
-    margin: 0.95rem;
+    margin: 0.75rem;
     padding: 0.05rem 0 0.35rem 0;
     
 }
 
 #design-cards .card-contents .card-info .header{
     background: #3BB1D7;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.6rem;
+}
+
+#design-cards .header-title{
+    font-size: 1.49rem;
+    font-weight: 400;
 }
 
 #design-cards .card-contents .card-body{
@@ -341,13 +378,16 @@ ul{
 }
 
 #design-cards .card-contents .card-body img{
+    display: block;
     width: 100%;
+    margin: auto;
     object-fit: contain;
     
 }
 
 .fa-star{
-    color: #FFC400;  display: flex;
+    color: #FFC400;  
+    display: flex;
     padding: 0 0.32rem;
 }
 
@@ -411,6 +451,9 @@ hr.m-rule{
 }
 
 /* Section: Lead Instructors */
+#lead-instructors{
+    margin-top: 3rem;
+}
 #lead-instructors .instructors{
     display: flex;
     justify-content: space-between;
@@ -424,23 +467,24 @@ hr.m-rule{
 }
 
 #lead-instructors .instructors img{
+    display: block;
     height: 6.25rem;    
-    width: auto;
+    width: 90%;
     object-fit: contain;
+    margin: 0 auto !important;
    
 }
 
 #lead-instructors .details{
-    
+    margin: 0 auto;
     padding: 2.33rem 0.75rem;
     position: relative;
     bottom: 3rem;
     z-index: -1;
     background: #fff;
-    box-shadow: 4px 4px 10px  rgba(114,202,242,0.32),
-                4px 4px 10px  rgba(114,202,242,0.32);
-    border-radius: 0.875rem;
-   
+    box-shadow: 8px 6px 25px  rgba(114,202,242,0.32),
+                8px 6px 25px  rgba(114,202,242,0.32);
+    border-radius: 0.875rem; 
 }
 
 .details h3,
@@ -473,7 +517,6 @@ p{
 #sponsors .sponsors-items{
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
     flex: 1;
 }
 
@@ -483,7 +526,229 @@ p{
 }
 
 .sponsor-logo img{
-    height: 2.2rem;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/* Section: Don't Know What To learn?  */
+#top-design{
+    margin-top: 1rem;
+    width: 100vw;
+    height: 100%;
+}
+
+#top-design .container .top-info p{
+    margin-top: -.75rem;
+}
+
+#top-design h3,
+section h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#top-design .top-courses{
+    display: flex;  
+    justify-content: flex-start;  
+}
+
+#top-design .top-courses .card-info{
+    margin: .15rem 2rem;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.55);
+    width: 100%;
+}
+
+
+#top-design .info-lg .card-header .bg-secondary{
+    object-fit: cover;
+}
+
+#top-design .top-courses .card-body-img img{
+    display: block;
+    width: 100%;
+    margin-top: -.65rem;
+}
+
+#top-design .card-body-img p,
+#top-courses .card-body-img p{
+    line-height: 1.2;
+    font-size: .85rem;
+    padding: .3rem .35rem;
+}
+
+#top-design .card-info .card-footer,
+#top-courses .c-flex-board .card-info .card-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    margin-top: -1rem;
+}
+
+#top-design .card-info .card-footer-menu .learn-btn,
+#top-courses .c-flex-board .card-footer-menu .learn-btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: .4rem;
+}
+
+/* Section: Top Courses in Development */
+#top-courses{
+    margin-top: -3.11rem;
+    width: 100vw;
+}
+
+
+#top-courses .container .course-flex .c-flex-board{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#top-courses .c-flex-board .card-info{
+    margin: .15rem 2rem;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.55);
+    width: 100%;
+}
+
+#top-courses .c-flex-board img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Section: Course Description */
+#course-description .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    padding: 1rem 1.4rem;
+}
+
+#course-description .card-info{
+    width: 40%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+#course-description .card-info .card-body-img img{
+    display: block;
+    width: 100%;
+    margin: .15rem auto;
+}
+
+#course-description .card-info .card-body-img p{
+    padding: .25rem .75rem;
+}
+
+#course-description .card-info .card-footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: .45rem;
+}
+
+#course-description .card-footer-menu .learn-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+#course-description .card-footer-menu .learn-btn a{
+    padding-top: .23rem;
+}
+
+#course-description .description-handle{
+    background: #ebeaeabe;
+    margin: 0 5rem;
+    width: 60%;
+}
+
+#course-description .description-handle .description-header h3{
+    font-weight: 400;
+}
+
+.description-handle hr.line-rule{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #b3afaf;
+    width: 70%;
+    margin-top: .33rem; 
+}
+
+/* Section: Courses handle */
+#courses-handle{
+    margin-top: 7.55rem;
+}
+
+#courses-handle h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+#courses-handle .course-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem;
+    padding: 1rem 0;
+}
+
+#courses-handle .course-info .card-info{
+    margin: 0 1.5rem;
+    box-shadow:0 6px 12px rgba(0, 0, 0, 0.35);
+    width: 25%;
+   
+}
+
+#courses-handle .course-info .header-bg {
+    background-color: #6cd9fd;
+    padding: 0.1875rem 1.55rem;
+}
+
+#courses-handle .course-info  .card-info h4{
+    padding-top: .35rem;
+    font-size: 1.22rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+#courses-handle .course-info .card-body-img img{
+    display: block;
+    width: 100%;
+}
+
+/* Section: Upload Courses */
+#upload-courses{
+    margin: 4rem 0;
+}
+
+#upload-courses .form-upload{
+    background-color: #2cc1f3;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 2.5rem;
+    border-radius: .75rem;
+}
+
+#upload-courses .form-upload{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+#upload-courses input[type="file"]{
+    display: none;
+}
+
+#upload-courses label{
+    color: #f2f2f2;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+
 }
 
 /* Section: Welcome */
@@ -502,8 +767,7 @@ p{
 }
 
 .form-wrap > *{
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
 .form-group{
@@ -511,18 +775,19 @@ p{
 }
 
 .form-group label{
-    
     display: block;
     font-family: 'Gill Sans', sans-serif;
     font-size: 1.2rem;
     color: #4a5568;
     line-height: 1.5;
-    font-weight: 700;
- 
 }
 
-.form-group input[type="email"],[type="password"],[type="text"]{
-    padding: 1rem 2.7rem;
+.form-group input[type="email"],
+[type="password"],
+[type="text"],
+[type="number"],
+textarea{
+    padding: 1rem 3rem;
     width: 100%;
     border: #72D3F2 1px solid;
     border-radius: 0.412rem
@@ -537,11 +802,11 @@ input[type="checkbox"]{
     outline: none;
     border-color: #19b4e7;
 }
+
 .login{
     display: flex;
     flex-direction: column;
     flex: 1;
-    
 }
 
 .login-footer{
@@ -561,8 +826,73 @@ input[type="checkbox"]{
 ::placeholder{
     font-size: 1rem;
     font-weight: 600;
+    color: #020202;
 }
 
+/* Section: Tutor's Sign Up Page */
+#tutor main{
+    position: relative;
+    margin: 16rem 0;
+    z-index: -1;
+    border: 0.1rem solid #19b4e7;
+    box-shadow: 0px 4px 4px #72D3F2,
+                0px 4px 4px #72D3F2;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .65rem 3rem;
+}
+
+#tutor .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#tutor .wrap-item{
+    padding: 0 .33rem; 
+}
+
+#tutor input{
+    padding-left: .38rem;
+}
+
+.wrap-item:nth-child(2) > div{
+    margin: 3rem auto;
+    border-left: 5px solid #ccc;
+    height: 470px;
+}
+
+#tutor  input[type="file"]{
+    display: none;
+}
+
+#tutor label[for="file"]{
+    background: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+#tutor .tutor-footer-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+#tutor .login-footer div{
+   margin: 0 1rem;
+}
+
+#tutor .login .btn-login{
+    padding: .45rem 1rem;
+}
 
 /* Section: Programming */
 #program{
@@ -594,10 +924,10 @@ input[type="checkbox"]{
 
 .name-bg{
     background: #19b4e7;
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     border-radius: 50%;
-    margin: 1rem 0;
-    padding: 0 .55rem;
+    margin: 1.3rem 0;
+    padding: 0 .65rem;
     height: 2.5rem;
 }
 
@@ -612,7 +942,6 @@ input[type="checkbox"]{
 }
 .border-notes{
     background: #ddd;
-    /* border: 1px solid #ddd; */
     margin: 1rem auto;
     padding: .56rem 0;
 }
@@ -622,12 +951,15 @@ input[type="checkbox"]{
 }
 
 /* Section: Purchase */
+#purchase-bg{
+    height: 100vh;
+}
+
 #purchase .container{
     display: flex;
     flex-wrap: wrap;
-    /* margin: 5rem 0; */
-   
 }
+
 .purchase-items{
     display: flex;
     justify-content: space-between;
@@ -636,13 +968,17 @@ input[type="checkbox"]{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
 }
 
 /* Creates left Column */
+.card-info .header-blur{
+    background: #afebff;
+    padding:  0.25rem;  
+         
+}
 #purchase  .purchase-left{
     height: 100vh;
-    flex: 0 0 48%;
+    flex: 0 0 49%;
     padding: 9rem;
     
 }
@@ -650,39 +986,122 @@ input[type="checkbox"]{
 #purchase .purchase-right{
     display: flex;
     justify-content: flex-end;
-    background: #72D3F2;
+    background: rgb(26, 124, 156);
     border-top-left-radius: 45% 50%;
     border-bottom-left-radius: 45% 50%;
-    flex: 0 0 48%;
+    flex: 0 0 47%;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    /* position: relative;
-    z-index: 1; */
     cursor: pointer;
+    overflow: auto;
+    height: 100vh;
+}
+
+.card-info .header{
+    background: #2cc1f3;
+    padding:  0.25rem;          
+}
+
+.card-info .header h4{
+    padding-top: .55rem;
+    font-size: 1.55rem;
+    font-weight: 400;
 }
 
 .form-wrapped{
-    padding: 9rem;
-    margin: 0 2.9rem;
+    padding-top: 8.5rem;
+    padding-left: 3rem;
+    margin: 0 5rem;
 }
 
 .form-wrapped .form-group-alt{
-   margin-bottom: 1rem;
+   margin-bottom: 2rem;
+}
+
+.form-group-alt input[type="text"]{
+    border-radius: 6px;
+    padding: 0.55rem ;
+    border: none;
+    width: 100%;
+} 
+
+.form-group-alt input[type="text"]:focus{
+    outline: none;
+    border-color: transparent;
 }
 
 .form-group-alt label{
     display: block;
 }
+
 .form-group-alt input[type="number"]{
    padding: 0.65rem;
-   width: 80%;
+   width: 55%;
    border-radius: 0.4125rem;
    border: none;
+}
+
+.form-group-alt select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-apperance: none;
+    -ms-appearance: none;
+
+    display: inline-block;
+    background: url('../img/arrow-down.png') no-repeat 100% center;
+    color: #FFF;
+    font-weight: 600;
+    font-size: .75rem;
+    border: none;
+    margin-left: 0.55rem;
+}
+
+.form-group-alt select option{
+    background: #19b4e7;
+    font-size: .75rem;
+}
+
+label {
+    position: relative;
+}
+
+
+.form-group-alt select:focus{
+    outline: none;
+    border-color: transparent;
 }
 
 
 .form-group-alt button{
     background: transparent;
     border: none;
+}
+
+.input-details input[type="month"]{
+    width: 35%;
+    padding: 0.25rem 0;
+    border-radius: 5px;
+}
+
+.input-details input[type="text"]{
+    width: 20%;
+    padding: 0.38rem 0;
+}
+
+.input-details input[type="number"]{
+    width: 20%;
+    padding: 0.35rem 0;
+    
+}
+
+.input-details input[placeholder]{
+    text-align: center;
+    font-weight: 900;
+    color: #111 !important;
+}
+
+
+.margin-left{
+    margin-left: 11.2rem;
 }
 
 /* Remove Arrows From Input Number */
@@ -699,48 +1118,16 @@ input[type=number]{
     -moz-appearance: textfield;
 }
 
-.dropdown{
-    display: flex;
-    justify-content: flex-end;
-    /* flex-direction: column; */
-    position: absolute;
-    left: 0;
-    top: 16.4375rem;
-    right: 10.4rem;  
-}
-
-/* Dropdown Button */
-.dropbtn {
-    color: #fff;
-    /* padding: 16px; */
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    /* position: absolute; */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
-}
-
 .cardholder-items{
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+         
 }
 
-.input-details{
-    display: flex;
-    justify-content: space-between;
+.card-info .header-blur{
+    background: #afebff;
+    padding:  0.25rem;  
+         
 }
 
 .input-details input{
@@ -749,18 +1136,197 @@ input[type=number]{
     width: 100%;
 }
 
+.price-sales{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+.price-sales a{
+    padding: .85rem 1.3rem;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25),
+                0 6px 6px rgba(0, 0, 0, 0.25);
+}
 
 
+/* Section: Successful Message */
+#purchase .success{
+    background: #b5fafa;
+    opacity: 0.8;
+}
+
+.back-btn{
+    position: relative;
+    z-index: 1;
+}
 
 
+.purchase-items-blur{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
+.success-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    background: #3BB1D7;
+    padding:  2.5rem;
+    color: #fff;
+    margin: 2rem 1rem;
+    height: 500px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
 
+.success-block .flex-end{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin: 2rem 0;
+}
 
+.success-block img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1rem; 
+    background-size: cover;
+}
 
+.success-block p:first-child{
+    font-size: 2.5rem;
+}
 
+.success-block p:last-child{
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+}
 
+.card-info .header-blur{
+    background: #afebff;
+    padding:  0.25rem;  
+         
+}
 
+.card-info .header-blur h4{
+    padding-top: .33rem;
+    font-size: 1.77rem;
+    font-weight: 400;
+}
 
+.purchase-left .card-info{
+    flex: 1;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75),
+    0px 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.purchase-left .card-body{
+    padding: 0.23rem 0.11rem;
+}
+
+.purchase-left .card-body img{
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    object-fit: contain;
+}
+
+.purchase-left .card-body p{
+    font-size: 1.37rem;
+}
+
+.purchase-left .card-footer p{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.after-sales {
+    display: flex;
+    justify-content: space-between;
+}
+
+.after-sales a{
+    margin-right: 6rem;
+}
+
+/* Section: Create Community */
+#create-community .form-group{
+    margin-top: 3.5rem;
+}
+
+#create-community .form-group input,textarea{
+    background: #2eb8e2ec;
+    color: #fff;
+}
+
+#create-community .form-group textarea{
+    margin-top: -2rem;
+    
+}
+
+#create-community .form-group textarea:focus{
+    outline: none;
+    transition: .3s;
+    border-color: #19b4e7;
+}
+#create-community .form-group ::placeholder{
+    color: #fff;
+}
+
+/* Section: My Courses */
+#my_course{
+    margin-top: -2rem;
+}
+#my_course .container{
+    display: flex;
+    padding: 1rem 2.5rem;
+}
+
+#my_course h3{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+#my_course .card-info{
+    width: 30%;
+    box-shadow:0 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+#my_course .card-info .card-body-img img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+#my_course .card-info .card-footer{
+    display: flex;
+    justify-content: space-around;
+    margin: .75rem 0;
+}
+
+#my_course .card-info .card-footer i{
+    font-size: 1.4rem;
+}
+
+#my_course .card-info .card-footer-menu .learn-btn{
+    display: flex;
+    justify-content: space-around;
+}
 /* Section: Footer */
 #main-footer{
     display: flex;
@@ -769,12 +1335,9 @@ input[type=number]{
     flex: 1;
 }
 
-
-
 #main-footer .footer-col-1{
     padding: 1.5rem 0;
     margin: 0.65rem 1.5rem;
-    
 }
 
 #main-footer .footer-col-1 h3{
@@ -806,11 +1369,10 @@ input[type=number]{
 #main-footer .form-group{
     display: flex;
     flex-flow: row wrap;
-    
 }
 
 #main-footer .form-group input{
-    padding:  0.75rem;
+    padding:  0.75rem 0;
     border-radius: 0.325rem;
     border: none;
 }
@@ -828,4 +1390,541 @@ input[type=number]{
 
 #main-footer .copyright{
     font-size: 1.25rem;
+}
+
+/* Hamburger Icon Styling */
+header #navbar .topnav .icon {
+    display: none;
+}
+
+.fa-bars{
+    font-size: 1.3rem;
+}
+
+/*  JS validation  */
+
+.validation {
+    margin-top: .3rem;
+    padding: .5rem; 
+}
+
+.success,
+.fail {
+	margin-bottom: .5rem;
+	text-align: center;
+}
+
+.success {
+	background: #56ae26;
+	color: #fff;
+}
+
+.fail {
+	background: red;
+	color: #fff;
+}
+
+.hide {
+	display: none;
+}
+
+
+/* Media Queries: Breakpoint 768px  */
+@media (max-width: 768px){
+    header #navbar .topnav ul li a {
+        display: none;
+    }
+
+    header #navbar{
+        background: rgba(246, 246, 246, 0.85);
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 45%;
+    }
+    
+    header #navbar .topnav ul li a.icon {
+        float: right;
+        display: block;
+    }
+
+    header #navbar .topnav.responsive {
+        position: relative;
+    }
+    header #navbar .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+    header #navbar .topnav.responsive  ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+        margin-top: 1.43rem;
+        margin-right: 7.74rem;
+        transition: .5s all ease-in;
+    } 
+    
+    header #navbar .topnav.responsive  ul li a{
+        display: block;
+        padding: 0.55rem 0.18rem;
+        text-transform: capitalize;
+        margin: 0.23rem 0;
+
+    }
+
+    #showcase{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #navbar .btn-tutor{
+        font-size: .75rem;
+    }
+
+    header #navbar .btn-sign2{
+        padding: 0 .75rem !important;
+        border-radius: 3px;
+    }
+
+    header #navbar .btn-light{
+        padding: .12rem;
+        font-size: .85rem;
+    }
+
+    #showcase .showcase-items .showcase-content{
+        text-align: center;
+    }
+
+    #showcase .showcase-items .showcase-content h3{
+        text-align: center;
+        line-height: 1.2;
+        font-size: 1.6rem;
+    }
+
+
+    #showcase .showcase-items .showcase-content h3 br{
+        display: none;
+    }
+
+    #showcase .showcase-items .showcase-content p{
+        margin-bottom: 1rem;
+    }
+
+    #showcase .showcase-items .showcase-content .btn-tertiary{
+        padding: .65rem 1rem;
+    }
+
+    /* Form Styling */
+    .form-wrap{
+        padding: 1.5rem;
+       
+    }
+
+    .form-group input[type="email"],
+    [type="password"],
+    [type="text"],
+    textarea{
+        padding: 1rem .45rem;
+        width: 100%;
+    }
+
+    ::placeholder{
+        font-size: .85rem;
+        font-weight: 500;
+        color: #070707;
+    }
+
+    .checkbox-terms{
+        font-size: .85rem;
+        font-weight: 400;
+    }
+
+    .login-footer {
+        font-size: .85rem;
+    }
+    .login-footer .sign-up{
+        margin: 0 .25rem;
+    }
+
+    /* Section: Course Description */
+    #course-description .container{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+
+
+    #course-description .card-info{
+        width: 100%;
+    }
+
+    #course-description .description-handle{
+        margin: 2rem auto;
+        padding: 4rem 1rem;
+        width: 100%;
+        height: 70vh;
+    }
+    
+    #course-description .description-handle .description-header h3{
+        margin-top: -2rem;
+        font-size: 1.3rem;
+    }
+
+    .description-handle hr.line-rule{
+        width: 100%;
+    }
+
+    /* Section: Design Platform */
+    #design .design-items{
+        display: flex;
+        flex-direction: column;
+    }
+    #design .design-items .design-item{
+        display: flex;
+        justify-content: center;
+        padding: 0 .104rem;
+    }
+
+    #design .design-items .design-item h3 a{
+        font-size: .75rem;
+        margin-bottom: 0.002rem;
+    }
+
+    #testimonials .testimonial-items{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #testimonials .testimonial-items .testimonial-item{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: .45rem;
+        width: 100%;
+    }
+
+    #testimonials .testimonial-item .blue{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        font-size: .72rem;
+        border-radius: 50%;
+        padding: 0.1875rem;
+    }
+    #testimonials .testimonial-item .info-msg p{
+        font-size: .75rem;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    #testimonials .testimonial-item .info-msg .name-list h3{
+        font-size: .68rem;
+    }
+
+    #testimonials .testimonial-item .info-msg .name-list p{
+        font-size: .55rem;
+    }
+
+    hr.m-rule{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /* Section: Create Community */
+    #create-community .form-wrap .form-wrapper h3{
+        font-size: 1.4rem;
+    }
+
+    /* Section: Courses Handle */ 
+    #navbar .list{
+        margin-top: 1rem;
+    }
+    #navbar .topnav .text-lower{
+        font-size: .55rem;
+        padding: 0 .12rem;
+        
+    }
+
+    #courses-handle h3{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    #courses-handle .course-info{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #courses-handle .course-info .card-info{
+        margin: 1rem auto;
+        width: 80%;
+       
+    }
+
+    /* Section: Upload Courses */
+    #upload-courses .form-upload{
+        width: 70%;
+        padding: 1rem 2rem;
+    }
+
+    #upload-courses label{
+        font-size: .85rem;
+
+    }
+
+    /* Section: Lead Instructors */
+    #lead-instructors .instructors .instructor{
+        padding: 1.4rem 2rem;
+        margin: 0 auto;
+    }
+
+    #lead-instructors .details{
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        padding: 2rem 1rem;
+        border-radius: 8px; 
+    }
+
+    #lead-instructors .instructors img{   
+        width: 45%;
+       
+    }
+
+    .details .andriod{
+        font-size: .45rem;
+    }
+    .details h3{
+        margin-top: .45rem;
+        font-size: 1.1rem;
+    }
+
+    .details p{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    #lead-instructors .container h2{
+        font-size: 1.65rem;
+    }
+
+    /* Section: Sponsors */
+    #sponsors h3{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    #sponsors .sponsors-items{
+        display: flex; 
+    }
+
+    /* Section: Purchase Course */
+    .purchase-items{
+        flex-direction: column;
+        margin: 3rem auto;
+        height: 100vh;
+    }
+
+    #purchase  .purchase-left{
+        height: 35vh;
+        flex: 0 0 10%;
+        margin: 0 auto;
+        width: 70%;
+        padding: 3rem 0;
+    
+    }
+
+    #purchase .purchase-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-top-left-radius: 0 0;
+        border-bottom-left-radius: 0 0;
+        flex: 0 0 35%;
+        z-index: 4;
+        position: relative;
+        left: 0;
+        bottom: -22px;
+        right: 0;
+    }   
+
+    .form-wrapped{
+        position: absolute;
+        padding: 4rem 1.5rem 0 1.5rem;
+        margin: 0 auto;
+    }
+
+    .form-group-alt input[type="text"] .name-field{
+        width: 60%;
+    }
+
+    /* Section: Purchase Course  */
+    .purchase-items-blur{
+        flex-direction: column;
+        margin: 3rem auto;
+        opacity: 0.35;
+    }
+
+    .success-block{
+        margin: 2rem auto;
+        height: 350px;
+        width: 340px;
+        border-radius: 1.4rem;
+    }
+
+    .success-block img{
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    .success-block .flex-end{
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-self: flex-end;
+        margin: 1rem -1rem;
+        padding-top: -13rem;
+    }
+
+    .success-block p:first-child{
+        font-size: 1.7rem;
+    }
+    
+    .success-block p:last-child{
+        font-size: 1.12rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+
+    /* Section: My Courses */
+    #my_course h3{
+        font-size: 1.5rem;
+        text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+      
+    }
+    #my_course .card-info{
+        width: 100%;
+    }
+
+    /* Section: Programming */
+    .name-bg{
+        display: block;
+        margin: 0 auto;
+        font-size: 1.45rem;
+        border-radius: 50%;
+        padding:0 .35rem;
+        height: 2.2rem;
+    }
+
+    #program .notes{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+    .border-notes{
+        margin: .46rem auto;
+    }
+
+    /* Section: Don't Know what to Learn? */
+    #top-design .container .top-info{
+        text-align: center;
+    }
+
+    #top-design .container .top-info h3{
+        font-size: 1.3rem;
+    }
+     
+    #top-design .container .top-courses{
+        flex-flow: row wrap;
+        flex: 0 0 40%;
+        margin: 1rem 0;
+    }
+
+    #top-design .top-courses .card-info{
+        margin-bottom: 1.4rem;
+    }
+
+    /* Section: top Courses in development */
+    #top-courses{
+        margin: 1rem 0;
+    }
+    #top-courses h3{
+        text-align: center;
+        font-size: 1.26rem;
+        padding-bottom: .76rem;
+    }
+
+    #top-courses .course-flex{
+        overflow: scroll;
+        -webkit-overflow-scrolling: scroll;
+    }
+
+    #top-courses .card-info{
+        width: 100%;
+    }
+
+    #top-courses .card-body-img p{
+        line-height: 1.11;
+        font-size: .75rem;
+        padding: .3rem .15rem;
+    }
+
+    #top-courses .c-flex-board .card-info{
+        margin: .15rem 1rem;
+        width: 90%;
+    }
+
+    #top-courses .c-flex-board .card-info .star-rates i{
+        font-size: .74rem;
+    }
+
+    #course-description .card-footer-menu .learn-btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #course-description .card-footer-menu .learn-btn a .btn-secondary{
+        padding: .33rem .26rem !important;
+
+    }
+
+    /* Section: Tutor's Sign up Page */
+    #tutor main{
+        margin-top: 29rem;
+        padding: 2rem 3rem 0 3rem;
+    }
+    #tutor .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .wrap-item:nth-child(2) > div{
+       display: none;
+    }
+
+    #tutor input{
+        padding-left: .42rem;
+    }
+
+    #tutor .tutor-form .wrap-item .form-group input{
+        width: 200px !important;
+    } 
+
+    #tutor .login-footer div{
+        margin: 0 .55rem;
+     }
+
+     #tutor .login-footer .checkbox-terms{
+        font-size: 1.3rem;
+        text-align: center !important;
+     }
 }

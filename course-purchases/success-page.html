@@ -2,37 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gtera &mdash; Hub</title>
+    <title>Gtera &mdash; Hub | Success</title>
     <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css">
-    <link rel="stylesheet" media="screen and(max-width: 768px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and(min-width: 1100px)" href="css/widescreen.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="purchase-bg" >
+<body id="purchase-bg">
     <header>
         <nav id="navbar-flex" >
             <div>
-                <img src="./img/logo/image 1.png" alt="brand-logo" >
+                <img src="../img/logo/image 1.png" alt="brand-logo" >
             </div>
             
             <ul>
-                <li><a href="index.html" class="btn-white back-btn">Back to Home</a></li>
+                <li><a href="../index.html" class="btn-white back-btn">Back to Home</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Purchase Course -->
-    <section id="purchase" class="">
-        <div class="purchase-items">
+    <!-- Section: Purchase Course -->
+    <section id="purchase" class="success-blur">
+        <div class="purchase-items-blur">
             <div class="purchase-left">
-                <div class="card-info  ">
-                    <div class="header">
+                <div class="card-info ">
+                    <div class="header-blur">
                         <h4 class="text-center">Graphic Design</h4>
                     </div>
                     <div class="card-body">
-                        <img src="./img/graphics2.png" alt="graphics-splash">
+                        <img src="../img/graphics2.png" alt="graphics-splash">
                         <div><p class="text-center">Become a graphics designer in no time</p></div>
                     </div>
                     <div class="card-footer">
@@ -43,24 +41,24 @@
                     
                 </div>
             </div>
-            <div class="purchase-right">
+            <div class="purchase-right success">
                 <div class="form-wrapped">
                         <form action="">
                             <div class="form-group-alt">
                                 <label for="name">Card Holder</label>
-                                <input type="text" name="Card-Holder"  placeholder="Jibrin Masud">
+                                <input type="text" name="Card-Holder"  placeholder="Jibrin Masud" disabled>
                             </div>
                             <div class="form-group-alt">
                                 <label for="number">Card Number</label>
-                                <input type="number" name="Card-Holder"  placeholder="**** **** **** 1234">
-
+                                <input type="number" name="Card-Holder"  placeholder="**** **** **** 1234" disabled>
+                                
                                 <select name="card" id="card">
                                     <option value="VISA">VISA</option>
-                                    <option value="MASTER">MASTERCARD</option>
+                                    <option value="MASTER">MASTER</option>
                                     <option value="VERVE">VERVE</option>
                                 </select>
                             <div>
-                           
+                            
                             <div class="form-group-alt">
                                 <div class="cardholder-items">
                                     <label for="">
@@ -69,18 +67,17 @@
                                     </label>
                                 </div>
                                 <div class="input-details">
-                                    <input type="month" name="month" id="" placeholder="June">
-                                    <input type="text" name="year" placeholder="2020">
-                                    <input type="number" name="CVC" id="cvc-number" placeholder="123">
+                                    <input type="month" name="month" id="" placeholder="June" disabled>
+                                    <input type="number" name="CVC" id="cvc-number" placeholder="123" disabled>
                                 </div>
                             </div>
-                            <div class="price-sales">
+                            <div class="price-sales after-sales">
                                 <div>   
                                     <a href="" class="btn-tertiary">Purchase</a>
                                 </div>
-                               <div>
+                                <div>
                                     <p class="text-center">$12.99</p>
-                               </div>
+                                </div>
                             </div>
                         </form>
                 </div>
@@ -89,10 +86,24 @@
         </div>
     </section>
 
+    <!-- Section: Successful Message -->
+    <section id="msg">
+        <div class="container">
+            <div class="success-block text-center">
+                <div class="flex-end text-white">x</div>
+                <div><img src="../img/logo/image 36.png" alt="checked-mark"></div>
+                <div>
+                    <p>Congratulations</p>
+                    <p>your payment was successful</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section: Successful Message -->
+
     
 
 
-    
     <!-- FontAwesome Kits -->
     <script src="https://kit.fontawesome.com/751b3a69bc.js" crossorigin="anonymous"></script>
 </body>
